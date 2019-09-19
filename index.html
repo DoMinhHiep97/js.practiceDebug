@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Debug Demo</title>
+    </head>
+   <body> 
+       <form name="f">
+            Số đầu tiên:<br/>
+           <label>
+               <input id="a" type="text">
+           </label><br/>
+            Số thứ hai: <br/>
+           <label>
+               <input id="b" type="text">
+           </label><br/>
+            <div id="resultDiv"></div>
+            <input type="button" value="Calculator" onclick="product()">
+       </form>
+      <script>
+         function product(){
+             let a = document.getElementById("a").value;
+             let b = document.getElementById("b").value;
+             let result = a * b;
+            document.getElementById("resultDiv").innerHTML = "Kết quả: " + result;
+         }
+      </script>   
+   </body>
+</html>
